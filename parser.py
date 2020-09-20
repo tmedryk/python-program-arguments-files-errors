@@ -15,10 +15,15 @@ def get_filename():
         return -1
 
 def read_from_file_to_list(filename):
-    output
+    output = []
     with open("input.txt", "r") as file_to_read:
-        file_to_read.readlines
-        print(file_to_read.readlines())
+        for line in file_to_read.readlines():
+            row = line.replace("\n","").split(" ")
+            output.append(row)
+            print(output)
+            # print(row)
+        # file_to_read.readlines
+        # print(file_to_read.readlines())
 
 
 def main():
